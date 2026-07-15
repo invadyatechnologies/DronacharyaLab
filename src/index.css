@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #FFFFFF;
+  color: #0F172A;
+  line-height: 1.5;
+}
+
+::-webkit-scrollbar { width: 3px; height: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #E2E8F0; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+table { border-collapse: collapse; }
+th, td { white-space: nowrap; }
+
+/* Remove default focus outlines, use custom */
+*:focus { outline: none; }
+input:focus, select:focus, textarea:focus {
+  border-color: #3B82F6 !important;
+  box-shadow: 0 0 0 1px rgba(59,130,246,0.15);
+}
